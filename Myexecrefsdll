@@ -1,0 +1,13 @@
+#include "PaymentCalc.h"
+#include <iostream>
+
+int main()
+{
+    Payment person1; // оголошення об'єкту типу Payment
+    person1.read(); // заповнення полів об'єкту з клавіатури
+    person1.calculateAccuredAmount(person1); //обчислення нарахованої суми
+    person1.calculateAmountWitheld(person1); //обчислення утриманої суми,
+    person1.calculateFinalAmount(person1); //обчислення суми на руки
+    person1.display(); // виведення результатів на екран(в тому числі стаж. медот обрахуваня стажу викликаєтьсу у самій функції
+    
+}
